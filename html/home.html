@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Construction & Consultancy</title>
+    <link rel="stylesheet" href="/CSS/home.css"> <!-- CSS LINK ADDED HERE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+    <!-- Moving Write-ups -->
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left">🏗 Building the Future with Excellence | 20+ Years of Trusted Construction | Innovation & Quality in Every Project 🏢</marquee>
+    </div>
+
+    
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+          <img src="/IMG/logo.jpg" alt="SS Construction Logo">
+          <span>SS Construction</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="mailto:ss_Construction_Consultancy@gmail.com">
+            <i class="fas fa-envelope"></i> ss_Construction_Consultancy@gmail.com
+          </a></li>
+          <li><a href="tel:+919876543210">
+            <i class="fas fa-phone"></i> +91 98765 43210
+          </a></li>
+        </ul>
+    
+        <div class="auth-buttons" id="authButtons">
+          <a href="/html/signin.html" class="btn">Login</a>
+          <a href="/html/signup.html" class="btn">Register</a>
+          <a href="admin.html" class="btn">Admin Login</a>
+
+        </div>
+    
+        <div class="user-info" id="userInfo" style="display:none;">
+          Logged in as &nbsp; <span id="usernameDisplay"></span>
+          <button class="btn" onclick="logout()">Logout</button>
+        </div>
+      </nav>
+
+    <header class="hero" id="home">
+        <h1>Welcome to SS Construction & Consultancy</h1>
+        <p class="animated-text">We turn your vision into reality with precision and quality! 🏗✨</p>
+        <!-- <button>Explore Our Projects</button> -->
+        <div class="auth-buttons">
+            <a href="/HTML/exploreproject.html" class="btn">Explore Our Projects</a>
+        </div>
+    </header>
+
+      <section id="upcoming-projects" class="fade-in">
+        <h2>Upcoming Projects</h2>
+        <div class="slider">
+          <div class="slide active">
+            <img src="/IMG/upcoming1.jpg" alt="Upcoming Project 1">
+            <div class="caption">
+              Luxury Apartments Coming Soon 🏢
+              <br>
+              <a href="/HTML/booking.html" class="book-btn">Book Now</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="/IMG/upcoming2.jpg" alt="Upcoming Project 2">
+            <div class="caption">
+              Modern Villas Booking Open 🏡
+              <br>
+              <a href="/HTML/booking.html" class="book-btn">Book Now</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="/IMG/upcoming3.jpg" alt="Upcoming Project 3">
+            <div class="caption">
+              Apartments Booking Open 🏢
+              <br>
+              <a href="/HTML/booking.html" class="book-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </section>
+      
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p class="animated-text">Providing end-to-end construction and consulting solutions!</p>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Construction</h3>
+                <p>High-quality construction services for residential and commercial projects.</p>
+            </div>
+            <div class="card">
+                <h3>Consulting</h3>
+                <p>Expert consultation for your building and real estate projects.</p>
+            </div>
+            <div class="card">
+                <h3>Architecture</h3>
+                <p>Innovative and sustainable architectural solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <p class="animated-text">A legacy of iconic and sustainable developments!</p>
+        <div class="project-gallery">
+            <div class="project-card">
+                <img src="/IMG/pr1.jpg" alt="Project 1">
+                <a class="view-more" href="/HTML/project1.html">view-more</a>
+            </div>
+            <div class="project-card">
+                <img src="/IMG/p2new.jpg" alt="Project 2">
+                <a class="view-more" href="/HTML/project2.html">view-more</a>
+            </div>
+            <div class="project-card">
+                <img src="/IMG/p3.jpg" alt="Project 3">
+                <a class="view-more" href="/HTML/project3.html">view-more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+<section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <p class="animated-text">Real feedback from our satisfied clients!</p>
+    <div class="testimonial-cards">
+        <div class="testimonial">
+            <p>"SS Construction delivered our dream project on time and within budget. Truly impressed!"</p>
+            <h4>- Arjun Mehta, Homeowner</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Professional team with great attention to detail. Highly recommended for commercial builds!"</p>
+            <h4>- Kedar Nath Paul, Business Owner</h4>
+        </div>
+        <div class="testimonial">
+            <p>"From consultation to completion, everything was smooth and efficient."</p>
+            <h4>- Rakesh Singh, Architect</h4>
+        </div>
+    </div>
+</section>
+<!-- Team Section -->
+<section id="team">
+    <h2>Meet Our Team</h2>
+    <p class="animated-text">Dedicated professionals driving success at every step!</p>
+    <div class="team-members">
+        <div class="team-card">
+            <img src="/IMG/team1.jpg" alt="Team Member 1">
+            <h3>S.Chakraborty</h3>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="team-card">
+            <img src="/IMG/team2.jpg" alt="Team Member 2">
+            <h3>S.Bandyopadhyay</h3>
+            <p>Project Manager</p>
+        </div>
+        <div class="team-card">
+            <img src="/IMG/team3.jpg" alt="Team Member 3">
+            <h3>Amit Patel</h3>
+            <p>Chief Engineer</p>
+        </div>
+    </div>
+</section>
+
+<!-- Blog / News Section -->
+<section id="blog-news">
+    <h2>Latest News & Updates</h2>
+    <p class="blog-subtext">Stay informed with what's happening at SS Construction & in the industry.</p>
+    <div class="blog-cards">
+        <div class="blog-card">
+            <img src="/IMG/blog1.jpg" alt="Blog 1">
+            <h3>Breaking Ground: New Commercial Complex</h3>
+            <p>We've started work on a state-of-the-art commercial hub in South Kolkata. The project is expected to finish by mid-2026.</p>
+        </div>
+        <div class="blog-card">
+            <img src="/IMG/blog2.jpg" alt="Blog 2">
+            <h3>SS Construction Goes Green</h3>
+            <p>We're adopting more sustainable materials and processes. Here's how we're leading the way in green building!</p>
+        </div>
+        <div class="blog-card">
+            <img src="/IMG/blog3.jpg" alt="Blog 3">
+            <h3>Meet the Minds Behind Our New Designs</h3>
+            <p>Our architects share insights into the creative process behind the upcoming residential towers in Noida.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Partners Section -->
+<section id="partners">
+    <h2>Our Partners</h2>
+    <p class="animated-text">Proud collaborations that help us build the future together!</p>
+    <div class="partner-logos">
+        <img src="../IMG/partner1.jpg" alt="Partner 1">
+        <img src="../IMG/partner2 (2).jpg" alt="Partner 2">
+        <img src="../IMG/partner3" alt="Partner 3">
+        <img src="../IMG/partner4.jpg" alt="Partner 4">
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <h3>What types of construction projects do you handle?</h3>
+            <p>We manage residential, commercial, industrial, and infrastructure projects from start to finish.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you provide consultation services?</h3>
+            <p>Yes, we offer expert consultation for architecture, planning, and real estate development.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I get a quote for my project?</h3>
+            <p>You can contact us through the contact form or call us directly to schedule a consultation.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Are your services limited to one city?</h3>
+            <p>No, we operate across multiple regions and customize solutions to suit different locations.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications">
+    <h2>Certifications & Accreditations</h2>
+    <div class="certifications-container">
+        <div class="cert-card">
+            <img src="/IMG/iso.jpg" alt="ISO Certified">
+            <p>ISO 9001:2015 Quality Management Certification</p>
+        </div>
+        <div class="cert-card">
+            <img src="/IMG/green.jpg" alt="Green Building">
+            <p>Green Building Council Membership</p>
+        </div>
+        <div class="cert-card">
+            <img src="/IMG/safety.webp" alt="Safety Excellence">
+            <p>National Award for Safety Excellence</p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <h2>Project Gallery</h2>
+    <p class="gallery-subtext">Snapshots from our recent construction sites and achievements.</p>
+    <div class="gallery-container">
+        <img src="/IMG/pool.jpg" alt="Gallery Image 1">
+        <img src="/IMG/gallery2.jpg" alt="Gallery Image 2">
+        <img src="/IMG/gallery3.jpg" alt="Gallery Image 3">
+        <img src="/IMG/land.jpg" alt="Gallery Image 4">
+        <img src="/IMG/project3 (5).jpg" alt="Gallery Image 5">
+        <img src="/IMG/gallery6.webp" alt="Gallery Image 6">
+    </div>
+</section>
+
+<!-- Quote Request Section
+<section id="quote-request">
+    <h2>Request a Free Quote</h2>
+    <p class="quote-subtext">Tell us about your project, and we’ll get back to you with a customized quote.</p>
+    <form id="quote-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email Address" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <textarea name="projectDetails" rows="5" placeholder="Describe your project..." required></textarea>
+        <button type="submit">Submit Request</button>
+    </form>
+</section> -->
+
+
+
+
+    
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>With over 20 years of experience, SS Construction has been a trusted partner in delivering exceptional construction services.We have already cpmpleted many projects. All of them you can see on our website</p>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact">
+    <div class="contact-header">
+        <h2>Get In Touch</h2>
+        <p>We’d love to hear from you! Reach out with any questions or project inquiries.</p>
+    </div>
+
+    <!-- Google Maps Embed -->
+    <div id="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL_HERE" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    
+    <!-- Contact Form -->
+    <!-- Contact Section -->
+    <!-- <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Phone Number" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+        
+    </section> -->
+    <!-- SweetAlert2 CDN -->
+
+
+<!-- Your Contact Form -->
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contact us</h2>
+      <div class="contact-content">
+        <div class="column left">
+          <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help!</p>
+          <form id="contactForm">
+            <input type="text"   id="contactName"  name="name"    placeholder="Name"    required>
+            <input type="email"  id="contactEmail" name="email"   placeholder="Email"   required>
+            <input type="text"   id="contactPhone" name="phone"   placeholder="Phone"   required>
+            <textarea id="contactMessage" name="message" placeholder="Message.." required></textarea>
+            <button type="submit">Send message</button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="social-media">
+        <h2>Connect With Us</h2>
+        <p>Stay updated with our latest projects and updates.</p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </section>
+      
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2025 SS Construction & Consultancy. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/home.js"></script>
+  <script src="../js/contact.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

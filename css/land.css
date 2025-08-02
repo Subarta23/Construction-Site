@@ -1,0 +1,144 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/IMG/land.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.neon-text {
+  font-size: 3rem;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+}
+
+.overlay p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+/* Inquire Button */
+.neon-button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #0ff;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px #0ff;
+  transition: transform 0.2s;
+}
+
+.neon-button:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 20px #0ff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  color: #fff;
+  position: relative;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #000;
+  color: #0ff;
+  border: 1px solid #0ff;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  background: #0ff;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: #0ff;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .overlay {
+    padding: 20px;
+  }
+
+  .neon-text {
+    font-size: 2rem;
+  }
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}

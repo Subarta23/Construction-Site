@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Your Bookings</title>
+    <link rel="stylesheet" href="/css/booking.css" />
+  </head>
+  <body>
+    <section class="book-now">
+      <h1>Book Your Dream Project</h1>
+      <form id="bookingForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required />
+        <label for="projectType">Project Type</label>
+        <select id="projectType" name="projectType">
+          <option value="residential">Residential</option>
+          <option value="commercial">Commercial</option>
+          <option value="consultancy">Consultancy</option>
+        </select>
+        <label for="message">Details</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+
+    <section class="dashboard">
+      <h2>Your Bookings</h2>
+      <table id="bookingTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Details</th>
+            <th>Created At</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <script src="/js/booking.js"></script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #4d4a4a;
+    text-align: center;
+    color: #f3e7e7;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), 
+                url("/IMG/vertex.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.hero p {
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+    background: linear-gradient(45deg, #ff6600, #ff3300);
+    color: white;
+    padding: 14px 35px;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(255, 102, 0, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(45deg, #ff3300, #cc0000);
+    transform: scale(1.08);
+    box-shadow: 0px 10px 25px rgba(255, 51, 0, 0.6);
+}
+
+/* Sections */
+section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    font-size: 2.7rem;
+    color: #222;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Gallery Section */
+.gallery-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-grid img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials */
+.testimonial {
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    font-style: italic;
+    font-size: 1.3rem;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial span {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: 0.3s ease-in-out;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff6600;
+    box-shadow: 0px 5px 10px rgba(255, 102, 0, 0.3);
+}
+
+form button {
+    background: linear-gradient(45deg, #ff6600, #ff3300);
+    color: white;
+    padding: 14px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    border: none;
+}
+
+form button:hover {
+    background: linear-gradient(45deg, #ff3300, #cc0000);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .testimonial {
+        font-size: 1.1rem;
+    }
+}
+

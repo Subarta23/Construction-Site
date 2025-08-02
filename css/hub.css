@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0a0a0a;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url("/IMG/hub1.webp") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional for parallax effect */
+    width: 100%;
+    height: 100vh; /* Make it full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cta-btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #cc5500;
+}
+
+/* Section Styling */
+section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Sections */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-container div {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Fitness & Wellness Section */
+#fitness {
+    background: #e8f5e9; /* Light green for a wellness vibe */
+}
+
+#fitness .gallery-grid img {
+    border: 3px solid #4caf50;
+}
+
+/* Kids & Family Section */
+#kids {
+    background: #ffebee; /* Light red for a playful feel */
+}
+
+#kids .gallery-grid img {
+    border: 3px solid #ff5252;
+}
+
+/* Parking & Security Section */
+#parking {
+    background: #e3f2fd; /* Light blue for a professional touch */
+}
+
+#parking .gallery-grid img {
+    border: 3px solid #1976d2;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #cc5500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}

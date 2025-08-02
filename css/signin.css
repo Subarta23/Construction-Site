@@ -1,0 +1,106 @@
+
+
+/* CSS FILE: styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('/IMG/signin.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 350px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.488);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-group {
+    position: relative;
+    width: 90%;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #f7931e;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(247, 147, 30, 0.5);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0d3bb967;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #d67a14;
+}
+
+.forgot-password  {
+    margin-top: 15px;
+    font-size: 14px;
+    color: black;
+    font-size: 20px;
+}
+.signup-link{
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgb(240, 8, 8);
+    font-size: 24px;
+}
+
+.forgot-password a  {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.signup-link a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+     font-size: 19px;
+}
+
+
+.forgot-password a:hover, .signup-link a:hover {
+    text-decoration: underline;
+    color: rgb(224, 22, 22);
+}
